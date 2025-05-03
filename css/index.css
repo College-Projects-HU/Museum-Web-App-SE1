@@ -73,3 +73,6 @@
   text-decoration: none;
   color: #f8f9fa;
 }
+.footer a:hover {
+  color: #aa6a6a;
+}
