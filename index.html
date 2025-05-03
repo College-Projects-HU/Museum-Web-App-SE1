@@ -17,119 +17,98 @@
 
     </head>
     <body>
-      <!-- Header -->
-      <header class="header">
-        <nav class="navbar navbar-expand-lg">
-          <div class="container">
-            <a class="navbar-brand" href="#">
-              <img
-                src="./assets/photos/logo.png"
-                alt="Museum Logo"
-                height="40"
-                class="me-2 bg-white rounded-circle" />
-              National Art Museum
-            </a>
-
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarNav">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Exhibitions</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Collections</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Events</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Visit</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Support</a>
-                </li>
-              </ul>
-
-              <form class="d-flex ms-3 search-form">
-                <input
-                  class="form-control me-2"
-                  type="search"
-                  placeholder="Search"
-                  aria-label="Search" />
-                <button class="btn btn-outline-light" type="submit">
-                  <i class="fas fa-search"></i>
-                </button>
-              </form>
-            </div>
-          </div>
-        </nav>
-      </header>
-      <div class="container vh-100">
-        <div class="row">
-          <div class="col-md-12">
-            <h1>Welcome to the National Art Museum</h1>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm ">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img class="img-fluid" src="./assets/photos/logo.png" alt="logo" width="100px"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse " id="mainNav">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+              <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Collections</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Events</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Visit</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Membership</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Store</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Volunteer</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+            </ul>
+            <form class="d-flex me-3">
+              <input class="form-control me-2" type="search" placeholder="Search..." />
+              <button class="btn btn-outline-secondary" type="submit">Search</button>
+            </form>
+            <a href="#" class="btn btn-outline-primary me-2">Login</a>
+            <a href="#" class="btn btn-primary">Sign Up</a>
           </div>
         </div>
-      </div>
-
+      </nav>
+      
+      <!-- Hero Section (Optional) -->
+      <header class="bg-light text-dark text-center py-5">
+        <div class="container">
+          <h1>Welcome to the Virtual Museum</h1>
+          <p class="lead">Explore collections, book visits, and discover our history!</p>
+          <a href="#" class="btn btn-dark mt-3">Book a Visit</a>
+        </div>
+      </header>
+      
       <!-- Footer -->
-      <footer class="footer">
+      <footer class="footer mt-auto text-white">
         <div class="container">
           <div class="row">
-            <div class="col-md-3 mb-4">
-              <h5>About Us</h5>
-              <p class="text-muted">
-                Discover centuries of art and culture at the National Art
-                Museum. Preserving heritage, inspiring creativity.
-              </p>
-            </div>
-
-            <div class="col-md-3 mb-4">
+            <div class="col-md-4">
               <h5>Quick Links</h5>
-              <ul class="footer-links">
-                <li><a href="#">Plan Your Visit</a></li>
-                <li><a href="#">Membership</a></li>
-                <li><a href="#">Education Programs</a></li>
-                <li><a href="#">Volunteer</a></li>
-              </ul>
-            </div>
+              <div class="row">
+                <div class="col-4">
+                  <ul class="list-unstyled">
+                    <li><a href="#">Visit</a></li>
+                    <li><a href="#">Donate</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">Souvenirs</a></li>
+                  </ul>
+                </div>
+                <div class="col-4">
+                  <ul class="list-unstyled">
+                    <li><a href="#">Souvenirs</a></li>
+                    <li><a href="#">Souvenirs</a></li>
+                    <li><a href="#">Souvenirs</a></li>
+                    <li><a href="#">Souvenirs</a></li>
 
-            <div class="col-md-3 mb-4">
-              <h5>Contact</h5>
-              <ul class="footer-links">
-                <li>
-                  <i class="fas fa-map-marker-alt me-2"></i>123 Art Avenue, City
-                </li>
-                <li><i class="fas fa-phone me-2"></i>(555) 123-4567</li>
-                <li><i class="fas fa-envelope me-2"></i>info@museum.com</li>
-              </ul>
-            </div>
+                  </ul>
+                </div>
+                <div class="col-4">
+                  <ul class="list-unstyled">
+                    <li><a href="#">Souvenirs</a></li>
+                    <li><a href="#">Souvenirs</a></li>
+                    <li><a href="#">Souvenirs</a></li>
+                    <li><a href="#">Souvenirs</a></li>
 
-            <div class="col-md-3 mb-4">
-              <h5>Follow Us</h5>
-              <div class="social-icons">
-                <a href="#"><i class="fab fa-facebook"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-youtube"></i></a>
+                  </ul>
+                </div>
               </div>
             </div>
+            <div class="col-md-4">
+              <h5>Newsletter</h5>
+              <form>
+                <div class="mb-2">
+                  <input type="email" class="form-control" placeholder="Email Address" />
+                </div>
+                <button class="btn btn-primary btn-sm">Subscribe</button>
+              </form>
+            </div>
+            <div class="col-md-4">
+              <h5>Contact Us</h5>
+              <p>Email: info@museum.com</p>
+              <p>Phone: +123 456 7890</p>
+              <p>Location: Main Street, City</p>
+            </div>
           </div>
-
-          <div class="text-center mt-4 pt-3 border-top">
-            <p class="mb-0 text-muted">
-              &copy; 2023 National Art Museum. All rights reserved.
-            </p>
-          </div>
+          <hr />
+          <div class="text-center text-muted">© 2025 Museum. All rights reserved.</div>
         </div>
       </footer>
+      
 
       <!-- Bootstrap JS -->
       <script src="./js/bootstrap/bootstrap.bundle.min.js"></script>
