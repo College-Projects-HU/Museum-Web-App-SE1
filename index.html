@@ -3,115 +3,176 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Museum</title>
-    <!-- icon -->
-    <link rel="icon" href="./assets/photos/favicon.png" type="image/x-icon" />
-    <!-- Font Awesome -->
+    <title>Museum of Art & History</title>
+    <!-- Bootstrap CSS -->
     <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="./css/bootstrap/bootstrap.min.css" />
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet" />
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Museum of Art & History</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pages/exhibitions.html">Exhibitions</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pages/collections.html">Collections</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pages/events.html">Events</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pages/contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="btn btn-outline-light ms-2" href="login.html">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="btn btn-primary ms-2" href="register.html">Register</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-    </head>
-    <body>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm ">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#"><img class="img-fluid" src="./assets/photos/logo.png" alt="logo" width="80px"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse " id="mainNav">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
-              <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">Collections</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">Events</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">Visit</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">Membership</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">Store</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">Volunteer</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
-            </ul>
-            <form class="d-flex me-3">
-              <input class="form-control me-2" type="search" placeholder="Search..." />
-              <button class="btn btn-outline-secondary" type="submit">Search</button>
-            </form>
-            <a href="#" class="btn btn-outline-primary me-2">Login</a>
-            <a href="#" class="btn btn-primary">Sign Up</a>
+    <!-- Hero Section -->
+    <header class="hero-section">
+      <div class="container">
+        <div class="row align-items-center min-vh-75">
+          <div class="col-lg-6">
+            <h1 class="display-4 fw-bold">Welcome to Our Museum</h1>
+            <p class="lead">
+              Discover the wonders of art and history through our extensive
+              collections and exhibitions.
+            </p>
+            <a href="pages/exhibitions.html" class="btn btn-primary btn-lg"
+              >Explore Exhibitions</a
+            >
           </div>
         </div>
-      </nav>
-      
-      <!-- Hero Section (Optional) -->
-      <header class="bg-light text-dark text-center py-5">
-        <div class="container">
-          <h1>Welcome to the Virtual Museum</h1>
-          <p class="lead">Explore collections, book visits, and discover our history!</p>
-          <a href="#" class="btn btn-dark mt-3">Book a Visit</a>
-        </div>
-      </header>
-      
-      <!-- Footer -->
-      <footer class="footer mt-auto text-white">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-4">
-              <h5>Quick Links</h5>
-              <div class="row">
-                <div class="col-4">
-                  <ul class="list-unstyled">
-                    <li><a href="#">Visit</a></li>
-                    <li><a href="#">Donate</a></li>
-                    <li><a href="#">Events</a></li>
-                    <li><a href="#">Souvenirs</a></li>
-                  </ul>
-                </div>
-                <div class="col-4">
-                  <ul class="list-unstyled">
-                    <li><a href="#">Souvenirs</a></li>
-                    <li><a href="#">Souvenirs</a></li>
-                    <li><a href="#">Souvenirs</a></li>
-                    <li><a href="#">Souvenirs</a></li>
+      </div>
+    </header>
 
-                  </ul>
-                </div>
-                <div class="col-4">
-                  <ul class="list-unstyled">
-                    <li><a href="#">Souvenirs</a></li>
-                    <li><a href="#">Souvenirs</a></li>
-                    <li><a href="#">Souvenirs</a></li>
-                    <li><a href="#">Souvenirs</a></li>
-
-                  </ul>
-                </div>
+    <!-- Featured Exhibitions -->
+    <section class="featured-exhibitions py-5">
+      <div class="container">
+        <h2 class="text-center mb-5">Featured Exhibitions</h2>
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <div class="card h-100">
+              <img
+                src="https://via.placeholder.com/300x200"
+                class="card-img-top"
+                alt="Exhibition 1" />
+              <div class="card-body">
+                <h5 class="card-title">Ancient Civilizations</h5>
+                <p class="card-text">
+                  Explore the rich history of ancient civilizations through
+                  artifacts and interactive displays.
+                </p>
+                <a href="pages/exhibitions.html" class="btn btn-outline-primary"
+                  >Learn More</a
+                >
               </div>
             </div>
-            <div class="col-md-4">
-              <h5>Newsletter</h5>
-              <form>
-                <div class="mb-2">
-                  <input type="email" class="form-control" placeholder="Email Address" />
-                </div>
-                <button class="btn btn-primary btn-sm">Subscribe</button>
-              </form>
-            </div>
-            <div class="col-md-4">
-              <h5>Contact Us</h5>
-              <p>Email: info@museum.com</p>
-              <p>Phone: +123 456 7890</p>
-              <p>Location: Main Street, City</p>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card h-100">
+              <img
+                src="https://via.placeholder.com/300x200"
+                class="card-img-top"
+                alt="Exhibition 2" />
+              <div class="card-body">
+                <h5 class="card-title">Modern Art Gallery</h5>
+                <p class="card-text">
+                  Experience contemporary art from emerging and established
+                  artists around the world.
+                </p>
+                <a href="pages/exhibitions.html" class="btn btn-outline-primary"
+                  >Learn More</a
+                >
+              </div>
             </div>
           </div>
-          <hr />
-          <div class="text-center text-muted">© 2025 Museum. All rights reserved.</div>
+          <div class="col-md-4 mb-4">
+            <div class="card h-100">
+              <img
+                src="https://via.placeholder.com/300x200"
+                class="card-img-top"
+                alt="Exhibition 3" />
+              <div class="card-body">
+                <h5 class="card-title">Science & Innovation</h5>
+                <p class="card-text">
+                  Discover groundbreaking scientific discoveries and
+                  technological innovations.
+                </p>
+                <a href="pages/exhibitions.html" class="btn btn-outline-primary"
+                  >Learn More</a
+                >
+              </div>
+            </div>
+          </div>
         </div>
-      </footer>
-      
+      </div>
+    </section>
 
-      <!-- Bootstrap JS -->
-      <script src="./js/bootstrap/bootstrap.bundle.min.js"></script>
-    </body>
-  </html>
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h5>Museum of Art & History</h5>
+            <p>123 Museum Street<br />City, Country</p>
+          </div>
+          <div class="col-md-4">
+            <h5>Opening Hours</h5>
+            <p>
+              Monday - Friday: 9:00 AM - 5:00 PM<br />
+              Saturday - Sunday: 10:00 AM - 6:00 PM
+            </p>
+          </div>
+          <div class="col-md-4">
+            <h5>Quick Links</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="pages/exhibitions.html" class="text-white"
+                  >Exhibitions</a
+                >
+              </li>
+              <li>
+                <a href="pages/collections.html" class="text-white"
+                  >Collections</a
+                >
+              </li>
+              <li><a href="pages/events.html" class="text-white">Events</a></li>
+              <li>
+                <a href="pages/contact.html" class="text-white">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+  </body>
 </html>
